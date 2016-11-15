@@ -90,9 +90,7 @@ function newp {
 function self-update()
 {
     colorize info "Composer" 
-    
     composer self-update
-    
     composer global update
 
     colorize info "Brew" 

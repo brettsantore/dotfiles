@@ -14,6 +14,5 @@ alias llf='ls -lG | grep -v "^d"'           # Files Only
 
 alias myip="curl https://wtfismyip.com/text"
 
-
 alias art='php artisan'
 alias pup="php -S localhost:8000"
