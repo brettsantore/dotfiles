@@ -9,7 +9,7 @@ alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias which="which -a"                      # Preferred 'which' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
-alias lld='ls -lG | grep "^d"'              # Directories Only
+alias lld='ls -laG | grep "^d"'              # Directories Only
 alias llf='ls -lG | grep -v "^d"'           # Files Only
 
 alias myip="curl https://wtfismyip.com/text"
