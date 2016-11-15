@@ -16,3 +16,5 @@ alias myip="curl https://wtfismyip.com/text"
 
 alias art='php artisan'
 alias pup="php -S localhost:8000"
+
+alias dockit="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
