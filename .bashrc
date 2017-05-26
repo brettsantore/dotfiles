@@ -1,6 +1,6 @@
 export PATH="./vendor/bin:~/.composer/vendor/bin:/usr/local/bin:$HOME/npm/bin:$PATH"
 
-export PS1="\h \u@\w: "
+export PS1="\h \u@\w\n: "
 export PS2="⇉ "
 
 export HISTSIZE=
