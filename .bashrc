@@ -1,6 +1,6 @@
-export PATH="~/.composer/vendor/bin:/usr/local/bin:$HOME/npm/bin:$PATH"
+export PATH="./vendor/bin:~/.composer/vendor/bin:/usr/local/bin:$HOME/npm/bin:$PATH"
 
-export PS1="${white}\h ${green}\u@$\w${magenta}\$(parse_git_branch)${green}: "
+export PS1="\h \u@$\w: "
 export PS2="⇉ "
 
 export HISTSIZE=
