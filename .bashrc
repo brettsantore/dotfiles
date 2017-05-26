@@ -1,12 +1,4 @@
-green="\033[0;00m";
-yellow="\033[0;33m";
-white="\033[0;37m";
-magenta="\033[0;35m";
-
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
+cd ~/code
 export PATH="./vendor/bin:~/.composer/vendor/bin:/usr/local/bin:$HOME/npm/bin:$PATH"
 
 export PS1="${white}\h ${green}\u@$\w${magenta}\$(parse_git_branch)${green}: "
