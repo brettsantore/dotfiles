@@ -15,6 +15,7 @@ alias llf='ls -lG | grep -v "^d"'           # Files Only
 alias myip="curl https://wtfismyip.com/text"
 
 alias art='php artisan'
+alias con='php bin/console'
 alias pup="php -S localhost:8000"
 
 alias dockit="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
