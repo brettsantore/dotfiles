@@ -1,4 +1,4 @@
-export PATH="./vendor/bin:~/.composer/vendor/bin:/usr/local/bin:$HOME/npm/bin:$PATH"
+export PATH="./vendor/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:$HOME/npm/bin:$PATH"
 
 export PS1="\n\u@\w\n: "
 export PS2="⇉ "
