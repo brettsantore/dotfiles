@@ -2,6 +2,7 @@
 alias up='cd ..'
 alias home='cd ~'
 alias desk='cd ~/Desktop'
+alias code='cd ~/Documents/Code'
 
 # Files Shortcuts
 alias cp='cp -iv'                           # Preferred 'cp' implementation
