@@ -16,6 +16,17 @@ alias myip="curl https://wtfismyip.com/text"
 
 alias art='php artisan'
 alias con='php bin/console'
-alias pup="php -S localhost:8000"
+alias pup="start_local_php_server"
 
 alias dockit="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
+
+function start_local_php_server() {
+    if [[ -n $1 ]]; then
+        echo $1
+        PORT=$1
+    else
+        PORT=8080
+    fi
+    
+    php -S localhost:$PORT
+}
