@@ -3,7 +3,6 @@ DIR=$(pwd)
 
 for file in .bash*
 do
-    rm -Rf ~/$file
-    ln -s $DIR/$file ~/$file
+    ln -Fs $DIR/$file ~/$file
     source ~/$file
 done
