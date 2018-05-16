@@ -48,45 +48,6 @@ function etrash
   fi
 }
 
-function newp {
-    
-    PROJECT_DIR=$HOME'/GoogleDrive/projectbase/'
-    
-    if [[ ! -d ~/GoogleDrive/projectbase/ ]]; then
-        colorize danger "Directory Unavailable:" 
-        colorize info $PROJECT_DIR 
-        return -1
-    fi
-    
-    
-    [[ -z "$1" ]] && PROJECT_NAME=new_project || PROJECT_NAME=$1
-    
-    if [ -d "$PROJECT_NAME" ]; then
-        colorize danger "'$PROJECT_NAME' directory exists"
-        return -1
-    fi
-    
-    
-    mkdir $PROJECT_NAME
-    cd $PROJECT_NAME
-    
-    cp -R $PROJECT_DIR .
-    
-    if [[ -a start ]]; then
-        ./start $PROJECT_NAME
-        rm -rfd start
-    fi
-    
-    git init -q
-    git add --all
-    git commit -q -m 'Project Created'
-    
-    composer install
-    
-    colorize success "Project Created: $PROJECT_NAME"  
-    
-}
-
 function self-update()
 {
     colorize info "Composer" 
