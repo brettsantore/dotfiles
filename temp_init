@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+for file in .bash*; do
+    source file
+done
